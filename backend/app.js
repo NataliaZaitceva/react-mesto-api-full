@@ -13,6 +13,9 @@ const { PORT = 4027 } = process.env;
 const options = {
   origin: [
     'http://localhost:3006',
+    'http://mesto.students.nomoredomains.club',
+    'http://mesto.students.nomoredomains.club',
+    'https://github.com/NataliaZaitceva/react-mesto-api-full.git',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   preflightContinue: false,
