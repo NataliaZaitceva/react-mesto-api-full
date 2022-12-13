@@ -1,0 +1,9 @@
+.registration__form {
+    flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+    max-width: 358px;
+    height: 100%;
+    text-align: center;  
+    
+}

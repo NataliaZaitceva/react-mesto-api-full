@@ -1,0 +1,6 @@
+.button_view_submit-invalid {
+    border: 1px solid #E5E5E5;
+    color: #E5E5E5;
+    background-color: #FFFFFF;
+    cursor: auto;
+}

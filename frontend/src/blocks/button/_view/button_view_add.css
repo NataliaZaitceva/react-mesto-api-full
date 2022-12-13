@@ -1,0 +1,29 @@
+.button_view_add {
+    width: 150px;
+    height: 50px;
+    display: block;
+    background-image: url(../../../images/add.png);
+    background-size: 22px;
+    border: 2px solid white;
+    margin-right: 0;
+    margin-top: 37px;
+    border-radius: 2px;
+}
+
+.button_view_add:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 875px) {
+    .button_view_add {
+        margin: 36px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button_view_add {
+        width: 282px;
+        margin: 0 auto;
+        background-size: 16px;
+    }
+}

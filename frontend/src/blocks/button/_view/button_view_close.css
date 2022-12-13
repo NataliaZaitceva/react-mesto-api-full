@@ -1,0 +1,26 @@
+.button_view_close {
+    position: absolute;
+    top: -42px;
+    right: -42px;
+    background-image: url(../../../images/Close_Icon.svg);
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    border: none;
+    background-color: black;
+}
+
+.button_view_close:hover {
+    opacity: 0.6;
+ }
+
+@media screen and (max-width: 521px) {
+    .button_view_close {
+        background-size: 20px;
+        top: -36px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+}

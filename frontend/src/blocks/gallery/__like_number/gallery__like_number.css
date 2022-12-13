@@ -1,0 +1,9 @@
+.gallery__like_number{ 
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin: 2px 0 0;
+}

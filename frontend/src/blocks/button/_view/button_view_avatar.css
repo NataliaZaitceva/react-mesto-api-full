@@ -1,0 +1,17 @@
+.button_view_avatar{
+  background-image: url(../../../images/editavatar.svg);
+width: 120px;
+height: 120px;
+border-radius: 50%;
+position: absolute;
+opacity: 0;
+border: none;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 26px;
+transition: .8s ease;
+}
+.button_view_avatar:hover {
+  opacity: .8;
+  background-color: #000;
+}

@@ -1,0 +1,18 @@
+.gallery__item {
+    width: 282px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    
+
+}
+
+@media screen and (max-width: 814px) {
+    .gallery__item {
+        max-width: 282px;
+        margin: 0 auto;
+    }
+}

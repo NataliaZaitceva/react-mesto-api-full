@@ -1,0 +1,7 @@
+.popup__edit-form {
+    flex-direction: column;
+    display: flex;
+    max-width: 358px;
+    height: 100%;
+
+}

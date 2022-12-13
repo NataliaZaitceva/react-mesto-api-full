@@ -1,0 +1,38 @@
+.button_view_submit {
+    background: #000000;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    margin-top: 17px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.button_view_submit:hover {
+    opacity: 80%;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+    .button_view_submit {
+        font-size: 14px;
+        line-height: 17px;
+        height: 46px;
+        margin-top: 15px;
+    }
+}
+
+.button_view_submit:disabled{
+    color: #000000;
+    background-color: #E5E5E5;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    cursor: auto;
+    opacity: 0.2;
+  }

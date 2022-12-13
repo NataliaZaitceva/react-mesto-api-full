@@ -1,0 +1,11 @@
+.gallery__description {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 15px 27px 21px;
+    padding-right: 5px;
+    justify-content: space-between;
+    align-self: center;
+    color: #000000;
+
+}
+

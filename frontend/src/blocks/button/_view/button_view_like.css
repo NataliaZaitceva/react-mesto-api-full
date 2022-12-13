@@ -1,0 +1,14 @@
+.button_view_like {
+    background-image: url(../../../images/like.svg);
+    width: 22px;
+    height: 19px;
+    border: none;
+    flex-shrink: 0;
+    align-self: center;
+    background-color: transparent;
+    }
+
+.button_view_like:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
