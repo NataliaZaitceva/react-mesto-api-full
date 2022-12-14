@@ -11,7 +11,7 @@ export class Auth {
   }
 
   register(user) {
-    return fetch('http://localhost:4027/signup', {
+    return fetch('https://another.mesto.students.nomoredomains.club/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ export class Auth {
   };
 
   authorize(user) {
-    return fetch('http://localhost:4027/signin', {
+    return fetch('https://another.mesto.students.nomoredomains.club/signin', {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ export class Auth {
   }
 
   getContent() {
-    return fetch('http://localhost:4027/users/me', {
+    return fetch('https://another.mesto.students.nomoredomains.club/users/me', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -41,6 +41,6 @@ export class Auth {
     }).then((res) => this._getResponse(res)); 
 }
 }
-const auth = new Auth('http://localhost:4027');
+const auth = new Auth('https://another.mesto.students.nomoredomains.club');
 
 export default auth;

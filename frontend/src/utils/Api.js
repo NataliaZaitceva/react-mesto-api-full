@@ -11,7 +11,7 @@ export class Api {
   }
 
   getInitialCards() {
-    return fetch('http://localhost:4027/cards', {
+    return fetch('https://another.mesto.students.nomoredomains.club/cards', {
       method: "GET",
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
@@ -21,7 +21,7 @@ export class Api {
   }
 
   addCards(card) {
-    return fetch('http://localhost:4027/cards', {
+    return fetch('https://another.mesto.students.nomoredomains.club/cards', {
       method: "POST",
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
@@ -35,7 +35,7 @@ export class Api {
   }
 
   getInfo() {
-    return fetch('http://localhost:4027/users/me', {
+    return fetch('https://another.mesto.students.nomoredomains.club/users/me', {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export class Api {
   }
 
   setUserInfo(user) {
-    return fetch('http://localhost:4027/users/me', {
+    return fetch('https://another.mesto.students.nomoredomains.club/users/me', {
       method: "PATCH",
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
@@ -59,7 +59,7 @@ export class Api {
 
 
  changeLikeCardStatus(cardId, isLiked) {
-    return fetch(`http://localhost:4027/cards/${cardId}/likes`, {
+    return fetch(`https://another.mesto.students.nomoredomains.club/cards/${cardId}/likes`, {
       method: isLiked ? "PUT" : "DELETE",
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -68,7 +68,7 @@ export class Api {
   }
 
   deleteUserCard(cardId) {
-    return fetch(`http://localhost:4027/cards/${cardId}`, {
+    return fetch(`https://another.mesto.students.nomoredomains.club/cards/${cardId}`, {
       method: "DELETE",
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -77,7 +77,7 @@ export class Api {
   }
 
   updateUserPhoto(user) {
-    return fetch('http://localhost:4027/users/me/avatar', {
+    return fetch('https://another.mesto.students.nomoredomains.club/users/me/avatar', {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -92,6 +92,6 @@ export class Api {
   // другие методы работы с API
 }
 
-const api = new Api ('http://localhost:4027');
+const api = new Api ('https://another.mesto.students.nomoredomains.club');
 
 export default api;

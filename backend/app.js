@@ -14,7 +14,7 @@ const options = {
   origin: [
     'http://localhost:3006',
     'http://mesto.students.nomoredomains.club',
-    'http://mesto.students.nomoredomains.club',
+    'https://mesto.students.nomoredomains.club',
     'https://github.com/NataliaZaitceva/react-mesto-api-full.git',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
@@ -23,6 +23,7 @@ const options = {
   allowedHeaders: ['Content-Type', 'origin', 'Authorization'],
   credentials: true,
 };
+
 app.use('*', cors(options));
 
 app.use(bodyParser.json()); // для собирания JSON-формата
