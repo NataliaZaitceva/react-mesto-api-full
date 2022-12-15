@@ -11,7 +11,7 @@ export class Auth {
   }
 
   register(user) {
-    return fetch('https://another.mesto.students.nomoredomains.club/signup', {
+    return fetch('https://mesto.students.nomoredomains.club/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ export class Auth {
   };
 
   authorize(user) {
-    return fetch('https://another.mesto.students.nomoredomains.club/signin', {
+    return fetch('https://mesto.students.nomoredomains.club/signin', {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ export class Auth {
   }
 
   getContent() {
-    return fetch('https://another.mesto.students.nomoredomains.club/users/me', {
+    return fetch('https://mesto.students.nomoredomains.club/users/me', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -41,6 +41,6 @@ export class Auth {
     }).then((res) => this._getResponse(res)); 
 }
 }
-const auth = new Auth('https://another.mesto.students.nomoredomains.club');
+const auth = new Auth('https://mesto.students.nomoredomains.club');
 
 export default auth;
