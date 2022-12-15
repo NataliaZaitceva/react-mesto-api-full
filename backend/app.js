@@ -4,7 +4,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
-const helmet = require('helmet');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
@@ -42,7 +41,6 @@ app.use('/', require('./routes/index'));
 
 app.use(errorLogger);
 app.use(errors());
-app.use(helmet());
 app.use((err, req, res, next) => {
   if (err.statusCode) {
     res.status(err.statusCode).send({ message: err.message });
